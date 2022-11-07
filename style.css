@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root{
+    overflow-x: hidden;
+}
+body {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: azure;
+}
+.logo{
+    margin-left: 30px;
+    padding: 10px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item ul{
+    display: flex;
+}
+.nav-item ul li{
+    list-style: none;
+    margin-right: 25px;
+}
+.nav-item ul li a{
+    text-decoration: none;
+    background-color: brown;
+    border: 2px, solid, rgb(0, 42, 255);
+    border-radius: 5px;
+    border-style: inset;
+}
+.hero{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: url(./images/IMG_4421.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+}
+.hero-section{
+    position:relative;
+    color: #fff;
+    text-align: center;
+}
+.hero-title{
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+.hero-about{
+    font-size: 1rem;
+    margin-top: 0px;
+}
+.hero-subtitle{
+    font-size: 1rem;
+}
