@@ -9,11 +9,9 @@ body {
     overflow-x: hidden;
     font-family: "Roboto", sans-serif;
 }
-/**header{
-    width: 100%;
-    height: 100px;
-    background-color: azure;
-}**/
+.content{
+    position: absolute;
+}
 .logo{
     margin-left: 30px;
     padding: 10px;
@@ -37,18 +35,20 @@ body {
     margin-right: 25px;
 }
 .nav-item ul li a{
+    font-size: 1rem;
+    background-color: rgb(84, 45, 18);
+    color: #fff;
     text-decoration: none;
-    background-color: brown;
-    border: 2px, solid, rgb(0, 42, 255);
+    border: none;
     border-radius: 5px;
     border-style: inset;
+    padding: 5px;
 }
 .hero{
-    position:absolute;
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 700px;
+    height: 600px;
 }
 .hero::before{
     content: "";
@@ -56,7 +56,7 @@ body {
     top:0;
     left: 0;
     width:100%;
-    height: 100%;
+    height: 600px;
     background: url(./images/IMG_4421.JPG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,4 +78,19 @@ body {
 }
 .hero-subtitle{
     font-size: 1rem;
+}
+.hero-button{
+    font-size: 1rem;
+    background-color: rgb(84, 45, 18);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    border-style: inset;
+    margin: 20px;
+    padding: 10px;
+}
+.about{
+    height: 500px;
+    position: relative;
 }
